@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  background: #0A0B1E;
+  font-family: var(--font-inter), "Roboto", sans-serif;
+}
+
+/* Animated gradient background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(108, 99, 255, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(255, 101, 132, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(108, 99, 255, 0.4);
+  border-radius: 3px;
+}
+
+/* Page transitions */
+main {
+  position: relative;
+  z-index: 1;
+}
