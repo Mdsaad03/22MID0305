@@ -15,24 +15,7 @@ Real-time campus notification system for Placements, Results, and Events.
 ## Setup
 
 1. Install dependencies:
-```bash
-cd notification_app_fe
-npm install
-```
-
-2. Configure environment variables in `.env.local`:
-```
-NEXT_PUBLIC_USE_MOCK_API=true
-API_BASE_URL=http://4.224.186.213
-API_TOKEN=your_bearer_token_here
-```
-
-3. Start development server:
-```bash
-npm run dev
-```
-
-4. Open [http://localhost:3000] in your browser
+Open [http://localhost:3000] in your browser
 
 ## Pages
 
